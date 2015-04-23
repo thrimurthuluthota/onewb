@@ -1,0 +1,69 @@
+
+SSH server- neans we can connect the server from any where. 
+
+1. what is Git Hooks?
+
+***Git hooks are simple scripts that run before or after certain actions. 
+They are useful for a variety of tasks, but primarily I find them useful for client-side validation so simple mistakes can be prevented. 
+For example, you can test syntax on files being commited, you can even have tests run.
+
+
+
+
+Derived objects:-
+Derived objects are files (intermediate or not) that are not directly maintained, but get created. 
+The most typical context is that of compilation, linking, and packaging of source files.
+
+1. How To Use SSH to Connect to a Remote Server in Ubuntu   DigitalOcean.html[How To Use SSH to Connect to a Remote Server in Ubuntu   DigitalOcean.html]
+
+SSH, or Secure Shell, is a protocol used to securely log onto remote systems. 
+It is the most common way to access remote Linux and Unix-like servers, such as VPS instances. In this guide, we will discuss how to use SSH to connect to a remote system.
+
+https://www.atlassian.com/git/tutorials/git-hooks/
+
+http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+
+C:\2.0\Projects\wb-ui-components\build-scripts\dev-test.sh
+
+The scripts we’ll show are written in Ruby
+
+
+back up :-
+
+sh ./setup-project.sh
+
+
+
+
+Pre-Commit:-
+----------
+
+The pre-commit script is executed every time you run git commit before Git asks the developer for a commit message or generates a commit object. You can use this hook to inspect the snapshot that is about to be committed. For example, you may want to run some automated tests that make sure the commit doesn’t break any existing functionality.
+
+npm install:-
+-----------
+npm is a NodeJS package manager. As its name would imply, you can use it to install node programs. Also, if you use it in development, it makes it easier to specify and link dependencies
+
+
+git-subtree - Merge subtrees together and split repository into subtrees
+
+
+https://github.com/new
+
+
+https://github.com/thrimurthuluthota/Test_project.git
+
+
+
+echo # Test_project >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/thrimurthuluthota/Test_project.git
+git push -u origin master
+
+
+git remote add origin https://github.com/thrimurthuluthota/Test_project.git
+git push -u origin master
+
+

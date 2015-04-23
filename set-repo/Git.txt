@@ -1,0 +1,197 @@
+Karthik Chandraraj
+
+what is GitHub?
+---------------
+
+****GitHub is a web-based Git repository hosting service, 
+which offers all of the distributed revision control and source code management 
+(SCM) functionality of Git as well as adding its own features.
+
+what is GIT?
+------------
+
+****Git is a distributed revision control system with an emphasis on speed,[5] data integrity,[6] and support for distributed, non-linear workflows.[7] 
+Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005, and has since become the most widely adopted version control system for software development.
+
+
+*************************
+Committing creates a new persistent snapshot (called commit or commit object) of the staging area in the Git repository. A commit object, like all objects in Git, is immutable. The staging area keeps track of the snapshots of the files until the staged changes are committed.
+************************
+
+
+http://git-scm.com/docs/gittutorial
+
+Getting a Git Repository :-
+------------------------
+You can get a Git project using two main approaches:-
+
+****The first takes an existing project or directory and imports it into Git. 
+****The second clones an existing Git repository from another server.
+
+
+http://gitref.org/basic/:-
+------------------------
+
+Git GUI
+C:\2.0\Projects
+
+Git brash:-
+---------
+
+Initializing a Repository in an Existing Directory:-
+---------------------------------------------------
+
+http://vsthrimurthulu.thota@192.168.2.171:7990/scm/~vsthrimurthulu.thota/wb-ui-base-app.git
+
+Git brash
+
+To check out the project 
+
+1. pwd - it will show the current location.
+2. cd give the project path.
+3. To checkout code:- git clone http://vsthrimurthulu.thota@192.168.2.171:7990/scm/~vsthrimurthulu.thota/wb-ui-base-app.git
+4. To commit out the folder** cd ..
+
+
+
+wb-ui-base-app.iml
+
+core- git clone http://vsthrimurthulu.thota@192.168.2.171:7990/scm/~vsthrimurthulu.thota/wb-ui-core.git
+wb-ui-components:-git clone http://vsthrimurthulu.thota@192.168.2.171:7990/scm/~vsthrimurthulu.thota/wb-ui-components.git
+wb-ui-formservices- git clone http://vsthrimurthulu.thota@192.168.2.171:7990/scm/~vsthrimurthulu.thota/wb-ui-formservices.git
+wb-ui-theme- git clone http://vsthrimurthulu.thota@192.168.2.171:7990/scm/~vsthrimurthulu.thota/wb-ui-theme.git
+
+
+C:\2.0\Projects\wb-ui-base-app\.git-hooks
+
+update--->git pull
+cd ~/cdd
+git init
+$ git remote add origin https://github.com/thrimurthuluthota/cdd.git
+$ git add . or git add *
+ git reset head
+$ git commit -m 'asdasd'
+$ git push -u origin master
+
+
+***************
+cd wb-ui-base-app
+git status
+git reset head
+git diff
+
+to add --> git add dev-test.sh
+to add the file  ---> git add git-hooks(file name)
+to add the folder ---> git add git-hooks(folder name)
+to commit the folder --> git commit -m "git-hooks"(message need type why you commiting)
+to commit the file ---> git commit -a -m "githooks files are adding"
+to know the status ---> git status
+to remove the file  --> git rm wb-ui-base-app.iml or wb-ui-formservices.iml
+
+to remove the folder --> git rm -r .git-hooks
+
+dev-test.sh
+C:\2.0\Projects\wb-ui-components
+C:\2.0\Projects\wb-ui-theme
+
+
+****
+git commit:-
+----------
+
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'initial project version'
+
+****
+f you’re starting to track an existing project in Git, you need to go to the project’s directory and type
+
+$ git init
+This creates a new subdirectory named .git that contains all of your necessary repository files – a Git repository skeleton. At this point, nothing in your project is tracked yet. (See Chapter 10 for more information about exactly what files are contained in the .git directory you just created.)
+
+****
+Recording Changes to the Repository:-
+
+You have a bona fide Git repository and a checkout or working copy of the files for that project. 
+You need to make some changes and commit snapshots of those changes into your repository each time the project reaches a state you want to record
+
+
+****Remember that each file in your working directory can be in one of two states
+
+1. tracked 
+2. untracked
+
+
+1. tracked :-
+------------
+Tracked files are files that were in the last snapshot
+
+They can be unmodified, modified, or staged. 
+
+2. untracked :-
+--------------
+
+Any files in your working directory that were not in your last snapshot and are not in your staging area.
+
+****When you first clone a repository, all of your files will be tracked and unmodified because you just checked them out and haven’t edited anything
+
+
+Untracked        Unmodified      modified    staged
+---------		 ----------	     --------    ------
+   |            1    |               |         |
+   |------------------------------------------>|               
+   |                 |               |         |
+   |                 |               |         |
+   |                 |      2        |         |
+   |                 |-------------->|         |
+   |                 |               |         |
+   |                 |               |         |
+   |                 |               |     3   |
+   |                 |               |-------->|
+   |                 |               |         |
+   |    4            |               |         |
+   |<----------------|               |         |
+   |                 |               |         |
+   |                 |               |         |
+   |                 |         5     |         |
+   |                 |<------------------------|         
+   |                 |               |         |
+   |                 |               |         |
+   
+   1. Add the file.
+   2. Edit the file.
+   3. Stage the file.
+   4. Remove the file.
+   5. Commit.
+   
+   
+   
+   ***Checking the Status of Your Files:-
+   ------------------------------------
+   $ git status
+   
+   
+   Let’s say you add a new file to your project, a simple README file. If the file didn’t exist before, and you run git status, you see your untracked file like so:
+   
+   
+   $ echo 'My Project' > README
+   $ git status
+   On branch master
+   Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+    README
+   nothing added to commit but untracked files present (use "git add" to track)
+   
+   ****Tracking New Files:-
+       -------------------
+	   
+	   In order to begin tracking a new file, you use the command git add. To begin tracking the README file, you can run this:
+	   
+	   $ git add README
+	   
+   
+   
+   
+   
+   
